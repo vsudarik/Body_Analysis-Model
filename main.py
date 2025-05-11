@@ -37,6 +37,9 @@ def bernstein_surface(u, v, coeffs):
 # Перевод декартовых координат в сферические
 # ---------------------------
 def cartesian_to_spherical(x, y, z):
+    print('x\n', x)
+    print('y\n', y)
+    print('z\n', z)
     r = np.sqrt(x ** 2 + y ** 2 + z ** 2)
     theta = np.arccos(z / r)
     phi = np.arctan2(y, x)
